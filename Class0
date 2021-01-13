@@ -74,8 +74,14 @@ Drop table: delete or destroy the table.
 Alter Table: add or remove a comumn or row.
 INSTERT INTO: add a new row to a table. INSERT INTO TABLENAME (name, name) VALUES(value for 1st name, value for 2nd name).... INSERT INTO STUDENTS(sid,name,...) Values(5432, JOHN DOE)
 DELETE row or bathc of rows: DELETE FROM: STUDENTS WHERE S.name: JOHN DOE. THis will delete all the rows with the name JOHN dow from the table STUDENTS.
-Primary key constraints: 
+Primary key constraints: must be unique and the entity is defined by that. like student ID or SSN.
+Foreign key: The foreign key is the common point between two tables. A primary key for students can be a foreign key in enrolled. It acts as a pointer. The combination of sid and cid is unie or primary key for enrolled but not each alone as they can be repeated through the rows.
+Enforcement of referential integrity: Define the rules for what to do when one of the sid is deleted. The effects on the enrollment table when the primary key sid is deleted from the students table.
 
+// Beginning of video 7 (last video)
+
+Syntax to define various constraints.
+NOT NULL: primary entity cannot be empty.
 
 
 
