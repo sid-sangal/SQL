@@ -1,0 +1,81 @@
+1.1: Explain Data Models and Data processing concepts
+
+1.2: Utilize Relational Model and Relational Algebra
+
+1.3: Utilize SQL query language
+
+1.4 Utilize relational model and relational algebra
+
+1.5 Describe the major components of database management systems.
+
+//Beginning of video 1
+The volume of available data is very big. Big scale of data collection. Need infrastructure to manage data and porform tasks. Data is growing ata very high rate. Need systems to digest this. 
+Variety of data or variety of sources of data collection adds challenge for integration of all types to be able to extract meaning from a inified database. Volume, variety, velocity aspects of the data.
+Classisc relational DBS: Entities are represented as tables and relational models like banks, flights, etc
+NoSql: Unstructured data. No table or no relation. Can be graph, text, key:value storage. Quesries extract knowledge feom unstructured data.
+Third: Analytics. Not operational workloads but mainly on large scale analytics on massive data like hadoop and spark.
+// end of video one
+Quiz 2/2
+// Beginning of video 2
+Volume, velocity, variety, veracity. (4V)
+Database management.
+1. Data Independence
+2. Efficient Data Access
+3. Data Administration
+4. Data Integrity and Security
+5. Concurrent Access and Crash Recovery
+6. Reduced App Development Time
+
+// Beginning of video 3
+Data models.
+A data model is the visulalization of the structure of the dta and the representation ofthe reequirement of the organization. It can also be called as the manual that an architext or an designer would use in order to implement the database.
+1. Physical schema: One. 
+2. Conceptual/logical schema: One
+3. External schema: you can have multiple external schemas in a DB. (Views)
+Example: The university data is represented in the form of tables. There are 3 tables for various relationaships Student ID, courses, enrollment. the 3 tables are the conceptual schema. The physical schema describes how the data is stored
+External: what is the total enrollment of students? uses multiple tables to draw information into one table of knowledge.
+
+Data independence: Logical data independence. Protects from changes in the logical schema.
+Physical data independence: Protets from physical data independence.
+Application developer definesthe type of query that will be run on top of the database. Cna be something simple with one condition or relationship iike how many students are enrolled in a course. Cna be multiple relations like students enrolled of a certain age groupand with a grade abve C.
+
+//beginning of video 4
+ER(Entitiy relationship) model.
+Model design: 
+  Phase 1: requirement analysis
+  Phase 2: Conceptual database design
+  Phase 3: Logical database design
+
+ER diagrams: Each entitiy in the entitiy set has a unique key(SSN number). Other attributes of an entity can be name(string), lot number(domain or limit of values)
+             A relationship(represnted by diamond) between two entities (rectangle) is uniquely identified by it's participant entities. The key (circles) for each entity are the charecteristic.
+           
+Key constraints: A department(entity) can be managed(relationship) by only one employee(entity). This is represented by arrows. A one to many relationship is a one directional arrow. For example from department to manages. There are 3 types. 1 to 1, 1 to many, many to many.
+Participation constraint: There can be a partial or total participation represented by a thin and thick line respectively. An employee can have a partial connection to manages(cna or cannot be the manager) but has a total participation with the work_in relationship as every employee must work in some or the other department.
+Weak entities: The existance of this type of entity depends on the existance of a strong entity. There exists a dependance on the existance of the strong entity. The existnace of a relationship of my partner or family is dependent on the presence of me in the employee entity.The weak entity must haev a one-to-many relationship with the strong entity(one owner, many weak entities. One employee, many family members)The weak must have a total participation with the stronger entity. The relationship between a weak or dependant entity and a strong entity is called a policy like a health insuarance policy coverage for the entire family of an employee. 
+
+// Beginning of video 5
+Class hierarchy and aggregation.
+"Is A" type relationship: Defining sub-classes of employees: Like a regular monthly salary (contract) employee or an hourly employee. Each typoe of employee which is an entity (rectangle) in it's own has its keys(circles) or charecteristics.
+The sub-class inherits the charecteristics of the main class. THe hourly will inherit from employee class. The sub-class might have it's unique keys like hourly wage but will still ahve all the keys of the main class.
+
+Aggregation: How do yo udefine a relationship between an entity and a setof other entities? A certain employee(entity/rectangle) monitirs(relationship/diamond) a set of entities(project, departments, funding, etc). Draw a box around the whole section of the ER diagram and define a relationship with the main entity.
+Ternary relationship: Adding a 3rd entity to the relationship. Duration(entity) (from and to/keys) for which the employee(entity/rectangle) work in(relationship/diamond with three connections this time) a department(entity).
+
+//Beginning of video 6
+
+ER diagram to relational model by using SQL. Introduction to primary key, foreign key, and referential integrity.
+Relational database: Number of rows is the #cardinality and the number of columns is the #degree of the model.
+Create TABLE STUDENT
+(name:type and length
+sid:char(20)
+name: char(20)
+)
+Drop table: delete or destroy the table.
+Alter Table: add or remove a comumn or row.
+INSTERT INTO: add a new row to a table. INSERT INTO TABLENAME (name, name) VALUES(value for 1st name, value for 2nd name).... INSERT INTO STUDENTS(sid,name,...) Values(5432, JOHN DOE)
+DELETE row or bathc of rows: DELETE FROM: STUDENTS WHERE S.name: JOHN DOE. THis will delete all the rows with the name JOHN dow from the table STUDENTS.
+Primary key constraints: 
+
+
+
+
