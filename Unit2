@@ -1,0 +1,6 @@
+#Beginning of video 1
+Relational database is a set of relations. There are no duplicate relations in the database.Each column in a table has a domain (D). The cardinality of the domain is the set of values it represents.
+Student(Table) Each row is a student and each column is an attribute.Terms realation and table are interchangable. The language to retrieve information in the database are of two types in relational. Procedural/operational and declarative.
+Procedural: instructs the system "how" to perform a set of actions to retrieve info. Declarative: tells "what" they want and the DBS figures out sequence of operations to retrieve data on it's own.
+
+#Relational Algebra Query Language.
