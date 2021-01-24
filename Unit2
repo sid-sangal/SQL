@@ -4,3 +4,25 @@ Student(Table) Each row is a student and each column is an attribute.Terms reala
 Procedural: instructs the system "how" to perform a set of actions to retrieve info. Declarative: tells "what" they want and the DBS figures out sequence of operations to retrieve data on it's own.
 
 #Relational Algebra Query Language.
+
+#Beginning of video projection
+Takes only one table as input and filters based on the given requirement "r"
+
+#Beginning of video intersection
+Works like the logic and operator.
+
+#Beginning of video theta join
+Similar to cartesian product. Addition of the selection predicate. Creates all possible tuples and then applies a condition on the tuples for filtering. The name of prof in table 1 and in the tbale 2 with a different attribute (column) title should match. Only then will valid tuples be created.
+
+#Quiz
+Which statement about the selection operator is correct?
+Ans: It displays certain tuples based on given criteria. 
+
+What is the ϴ-Join operation used for?
+Ans: To join two relations in a database. 
+
+Consider a relation, STUDENT, with the following attributes: Name, ID number, Major, Graduation Year, and GPA. Consider a query using this relation: “List the names and ID numbers of students majoring in Computer Science.” Which operator is absolutely necessary for this query?
+Ans: Projection
+
+#SQL is a declarative language
+There are three important keywords in the SQL language. select, from and where. Note: key words order by can also be found in the image shown.
