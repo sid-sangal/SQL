@@ -26,3 +26,26 @@ Ans: Projection
 
 #SQL is a declarative language
 There are three important keywords in the SQL language. select, from and where. Note: key words order by can also be found in the image shown.
+
+#Beginning of video 1
+From is where we pass the relation list. In select we pass the target list. In where there are qualifications or predicates. Distinct is optional, we specify when we want to remove the duplicate rows in the output query language.
+
+Compute cross product of all relations in the relation list. Discard tuples that do not satisy the qualification. We also filter out attributes not in the target list. If distinct exists, also remove duplicates.
+It is the job of the DBS to figure out how to perform the above goals.
+
+##Syntax:
+Select is the attribute that you want to be returned.
+From is where you specify the tables from where the data is supposed to be read.
+Where is the statement where you declare the condition.
+
+You want to find the names of the sailors who rented atleast one boat.
+Select wpuld be "S.sname"
+From would be Sailors.S and Reserves.R
+Where would be S.sid = R.sid
+
+Find sid of sailors who reserved a red of blue color boat.
+SELECT S.sid
+FROM Sailors.S, Boats.B, Reserves.R
+WHERE S.sid = R.sid and R.bid = B.bid
+AND (B.color = 'red' OR B.color = 'blue')
+
