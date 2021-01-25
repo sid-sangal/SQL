@@ -49,3 +49,6 @@ FROM Sailors.S, Boats.B, Reserves.R
 WHERE S.sid = R.sid and R.bid = B.bid
 AND (B.color = 'red' OR B.color = 'blue')
 
+#Beginning of video 2
+For finding red "OR" blue boats, use the union operator,  for red "and" green boats use the intersection operator.
+
