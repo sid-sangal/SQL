@@ -1,0 +1,27 @@
+# A compilation of various functions
+
+1. Select: It is the function used to chose data from the database. The returned data is stored in a result-st(table). SELECT * FROM (table name) returns all columns.
+
+2. SELECT DISTINCT: Returns as tuples that are unique from the mentioned column. SELCT DISTINCT columns1 FROM (table name).
+
+3. WHERE: Insters a condition on the select statement. SELECT column1 FROM (table name) WHERE (condition)(attribute = example)
+
+4. AND, OR, NOT: Interst multiple conditions or multiple where statements. SELECT column1 FROM (table name) WHERE NOT (condition1)(attribute = example1) AND/OR/NOT (condition2)(attribute = example2)
+
+5. ORDER BY: sort the result-set returned by SELECT in a specific desired order.THe sorting is ascending (ASC) by default and descending (DSC) is specified. SELECT column1, column2 FROM (table name) ORDER BY column1, column2  ASC|DESC;
+
+6. INSERT INTO: Used for adding a value or datapoint to a column. INSERT INTO table_name (column1,...) VALUES (value1, value2, value3, ...)
+
+7. NULL: IS NULL and IS NOT NULL. NULL values are not numeric values and this conditions is eeded to check if a certain field has no value. SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
+
+8. UPDATE: Used in order to modify existing records in the table. UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition
+
+9. DELETE: delete existing records in the table. DELETE FROM table_name WHERE condition;
+
+10. SELECT TOP: Returns a specified number of records. SELECT TOP (number) * FROM (Table_name)
+
+11. MIN() and MAX(): Returns the min or the max value from the selected column. SELECT MIN(column_name) FROM table_name WHERE condition;
+
+12. COUNT(), AVG() and SUM(): count returns the number of columns that satisfy the specified condition. avg returns the average numeric value of the column and sum returns the sum of all records in the column or of the mentioned attribute. SELECT COUNT/AVG/SUM (column_name) FROM table_name WHERE condition;
+
+13. LIKE: used for searching for a specific pattern along with the where column. 
